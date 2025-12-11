@@ -1,6 +1,7 @@
 import { Github, Twitter, Linkedin, Mail, Instagram } from 'lucide-react';
 import logoOriginal from "/src/assets/logo.png"
 import whatsap from '../../public/whatsapp.png'
+import assinatura from "/src/assets/assinatura2.png"
 
 
 const Footer = () => {
@@ -46,7 +47,7 @@ const Footer = () => {
 
           {/* Product Links */}
           <div>
-            <h3 className="font-semibold text-foreground mb-6">Product</h3>
+            <h3 className="font-semibold text-foreground mb-6">Donas d' Luxo</h3>
             <ul className="space-y-4">
               <li>
                 <a href="#home" className="text-muted-foreground hover:text-primary transition-colors animated-underline">
@@ -69,6 +70,11 @@ const Footer = () => {
 
 
         
+        </div>
+        <div className="desenvolvido">
+          <p>Desenvolvido por</p>
+          <a href="https://github.com/jeffuchoa"><img src={assinatura} alt="" /></a>
+          
         </div>
 
       </div>

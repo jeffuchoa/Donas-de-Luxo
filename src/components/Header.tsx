@@ -2,6 +2,8 @@ import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import ThemeToggle from './ThemeToggle'; // Mantido, mas não usado
+import logo from "../assets/logo.png"
+import logobranca from "../assets/logobranca.png"
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -33,8 +35,8 @@ const Header = () => {
     : "text-white";    // No Topo (Texto branco)
 
   // Caminhos das Logos
-  const logoOriginal = "/src/assets/logo.png"; // Logo Original (Dourada/Escura)
-  const logoBranca = "/src/assets/logobranca.png"; // Logo Branca
+  const logoOriginal = logo; // Logo Original (Dourada/Escura)
+  const logoBranca = logobranca; // Logo Branca
 
   const shadowClass = isScrolled
     ? "" // Scrollado (fundo branco), sem sombra

@@ -1,5 +1,10 @@
 import React from "react";
 import "./ui/hero.scss";
+import wave from "../assets/wave-hero.svg"
+import wave2 from "../assets/wave-hero2.svg"
+import modelo from "../assets/modelo.png"
+import background from "../assets/background.png"
+import background2 from "../assets/background2.png"
 
 export default function Hero() {
   return (
@@ -22,15 +27,15 @@ export default function Hero() {
 
         <div className="background2">
           <div className="fix"></div>
-          <img src="/src/assets/wave-hero.svg" className="wave" alt="" />
-          <img src="/src/assets/wave-hero2.svg" className="wave2" alt="" />
+          <img src={wave} className="wave" alt="" />
+          <img src={wave2} className="wave2" alt="" />
         </div>
 
-        <img src="/src/assets/modelo.png" alt="" className="diva" />
+        <img src={modelo} alt="" className="diva" />
       </div>
       <div className="degrade"></div>
-      <img src="/src/assets/background.png" alt="" className="background" />
-      <img src="/src/assets/background2.png" alt="" className="background3" />
+      <img src={background} alt="" className="background" />
+      <img src={background2} alt="" className="background3" />
 
     </section>
   );

@@ -1,9 +1,9 @@
 {
-  "name": "mondilla-connect",
+  "name": "jeffuchoa",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://jeffuchoa.github.io/Donas-de-Luxo/",
+  "homepage": "https://github.com/jeffuchoa/Donas-de-Luxo/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -12,8 +12,6 @@
     "preview": "vite preview",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
-
-    
   },
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",
@@ -32,7 +30,7 @@
     "react-dom": "^18.3.1",
     "react-hook-form": "^7.61.1",
     "react-image-accordion": "^1.2.2",
-    "react-router-dom": "^6.30.1",
+    "react-router-dom": "^6.30.2",
     "sonner": "^1.7.4",
     "tailwind-merge": "^2.6.0",
     "tailwindcss-animate": "^1.0.7"

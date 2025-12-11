@@ -10,7 +10,7 @@ const App = () => (
       <Sonner />
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Index />} />
+          <Route path="/Donas-de-Luxo" element={<Index />} />
         </Routes>
       </BrowserRouter>
     </>
