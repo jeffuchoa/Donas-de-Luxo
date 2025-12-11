@@ -1,0 +1,171 @@
+.hero {
+    height: 100vh;
+    width: 100%;
+    margin-bottom:100px;
+    position: relative;
+    display: flex;
+    container-type: inline-size;
+    container-name: heroContainer;
+    overflow: hidden;
+
+    @media (max-width: 1024px) {
+        align-items: end;
+    }
+
+    .informacoes {
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0);
+        display: flex;
+        flex-direction: row;
+        align-items: end;
+        position: relative;
+
+        @media (max-width: 1024px) {
+            flex-direction: column-reverse;
+            height: fit-content;
+            width: 100%;
+            justify-content: end;
+        }
+
+        .infos {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: white;
+            padding-left: clamp(5cqw, 10vw, 20cqw);
+
+            @media (max-width: 1230px) {
+                padding-left: 5cqw;
+
+            }
+
+            @media (max-width: 1024px) {
+                height: 100%;
+                width: 100%;
+                padding-left: 0;
+                padding-bottom: 50px;
+                justify-content: start;
+                padding-left:30px;
+
+            }
+
+            .objetivo{
+
+                @media (max-width: 1230px) {
+                    width: 70%;
+
+                }   
+            }
+        }
+
+        .diva {
+            height: clamp(50%, 80%, 100%);
+            position: absolute;
+            right: -25%;
+
+            @media (max-width: 1024px) {
+                z-index: -1;
+                bottom: 70%;
+                left:0;
+                height: 55vh;
+            }
+        }
+
+        .svg1 {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+        }
+
+        .background2 {
+            top: 0;
+            left: 0;
+            z-index: 0;
+            height: 100%;
+            display: flex;
+            flex-direction: column-reverse;
+
+            @media (max-width: 1024px) {
+                width: 100%;
+            }
+
+            .wave {
+                height: 100%;
+
+                @media (max-width: 1024px) {
+
+                    width: 100vw;
+                    height: auto;
+                    display: none;
+
+                }
+            }
+
+            .fix{
+                height: 100%;
+                background-color: white;
+                width: 2px;
+                position: absolute;
+                z-index: -2;
+            }
+
+            .wave2 {
+                display: none;
+
+                @media (max-width: 1024px) {
+                    display: flex;
+                    width: 100vw;
+                    height: auto;
+
+                }
+            }
+        }
+    }
+
+    .background {
+        top: 0;
+        left: 0;
+        position: absolute;
+        z-index: -2;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        
+        @media (max-width: 1024px) {
+            display:none;
+        }
+    }
+
+    .background3 {
+        display:none;
+        top: 0;
+        left: 0;
+        position: absolute;
+        z-index: -3;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+
+        @media (max-width: 1024px) {
+            display:flex;
+        }
+    }
+
+    .degrade {
+        background-image: linear-gradient(to bottom,
+                /* Define a direção: de cima para baixo */
+                rgba(0, 0, 0, 0.568),
+                /* Início: Preto com 20% de opacidade (o seu 'black/20') */
+                rgba(0, 0, 0, 0)
+                /* Fim: Totalmente transparente */
+            );
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 20%;
+        z-index: -1;
+    }
+
+
+}
